@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/userlogin.css" />
+    <title>WeWalk - Walk with Confidence</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <br />
+        <br />
+        <div class="title">
+          <h2>WELCOME BACK</h2>
+        </div>
+        <form action="/userlogin" method="POST">
+          <div class="input-group">
+            <input
+              type="text"
+              placeholder="EMAIL"
+              class="input-field"
+              name="useremail"
+            />
+            <input
+              type="password"
+              id="password"
+              placeholder="PASSWORD"
+              class="input-field"
+              name="userpassword"
+            />
+            <br />
+            <br />
+          </div>
+          <button class="button-background-move" role="button" id="my-link">
+            <strong>LOGIN</strong>
+          </button>
+        </form>
+        <br />
+        <br />
+        <br />
+        <h3>NEW TO WEWALK?</h3>
+        <a href="/login" class="go-back-link">REGISTER</a>
+      </div>
+    </div>
+    <script src="/userlogin.js" defer></script>
+  </body>
+</html>

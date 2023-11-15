@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/map.css" />
+    <title>WeWalk | Map</title>
+  </head>
+  <body>
+    <div class="header-text">
+      <% if (userNametoRender && userNametoRender.length > 0) { %>
+      <h1>
+        Welcome back <%= userNametoRender[0].username %>, your journey starts
+        here
+      </h1>
+      <% } else { %>
+      <h1>Welcome back, your journey starts here</h1>
+      <% } %>
+
+      <p>
+        We are currently tracking your location and looking for other active
+        WeWalk users in your area to connect you to.
+      </p>
+    </div>
+    <br />
+    <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=<%= process.env.GOOGLE_MAPS_API_KEY %>&libraries=places"
+      async
+      defer
+    ></script>
+    <script src="/map.js" defer></script>
+  </body>
+</html>

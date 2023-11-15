@@ -1,0 +1,172 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f8f8f8;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-top {
+  background-color: #f8f8f8;
+  color: #000000;
+  padding: 20px;
+}
+
+.header-logo {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.header-text {
+  margin-left: 120px;
+  color: #333333;
+}
+
+.header-text h1 {
+  font-size: 2em;
+  color: #333333;
+}
+
+.header-text p {
+  font-size: 1.2em;
+}
+
+.header-top {
+  background-color: #f8f8f8;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-logo {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.header-text {
+  margin-left: 120px;
+  color: #333333;
+}
+
+.header-text h1 {
+  font-size: 2em;
+  color: #333333;
+}
+
+.header-text p {
+  font-size: 1.2em;
+}
+.container {
+  text-align: center;
+}
+
+.content {
+  padding: 130px;
+  color: #333333;
+}
+
+.input-group {
+  margin: 20px 0;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.button-background-move {
+  font-family: "Montserrat", sans-serif;
+  color: #f8f8f8;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid #333333;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.button-background-move:after {
+  content: "";
+  background-color: #ab5a59;
+  border-radius: 12px;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-background-move:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-background-move {
+    border-radius: 12px;
+    padding: 13px 50px 13px;
+  }
+}
+.button-background-move a {
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+.go-back-link {
+  font-size: 20px;
+  text-decoration: none;
+  color: #423651;
+}
+
+.go-back-link:hover {
+  text-decoration: none;
+  color: #ab5a59;
+}
+
+input[type="text"].input-field {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #c0bfbf;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  height: 50px;
+}
+input[type="text"].input-field:focus {
+  outline: 1px solid #949292;
+}
+
+#password {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #c0bfbf;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+#password:focus {
+  outline: 1px solid #949292;
+}
